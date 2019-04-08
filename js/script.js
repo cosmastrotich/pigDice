@@ -5,6 +5,7 @@ var player2="";
 var throwDice=function(){
   return Math.floor(6*Math.random ())+1;
 }
+
 function Player(turn) {
   this.roll = 0;
   this.tempscore = 0;
@@ -12,6 +13,7 @@ function Player(turn) {
   this.turn = turn;
   this.playerName;
 }
+
 // checking for 1
 Player.prototype.rollone = function() {
   if (this.roll === 1) {
@@ -22,6 +24,7 @@ Player.prototype.rollone = function() {
   this.tempscore += this.roll;
   }
 }
+
 // hold
 Player.prototype.hold = function () {
   this.totalscore += this.tempscore;
@@ -34,6 +37,7 @@ Player.prototype.hold = function () {
   this.tempscore += this.roll;
   }
 }
+
 Player.prototype.winnerCheck = function () {
   if (this.totalscore >= 100) {
     alert(this.playerName + " You are the winner!");
@@ -57,7 +61,6 @@ $(document).ready(function(event){
 
   player1.playerName=player1Name
   player2.playerName=player2Name
-
 });
 
 $("button#New Game").click(function(event){
@@ -75,4 +78,3 @@ $("#Die-roll-2").empty();
 (".start").show();
 
 });
-$("button#player1-roll").click(function(event){
