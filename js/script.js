@@ -22,7 +22,10 @@ Player.prototype.rollone = function() {
   this.tempscore += this.roll;
   }
 }
-
+// hold
+Player.prototype.hold = function () {
+  this.totalscore += this.tempscore;
+  this.tempscore = 0;
 
 //user interface
 $(document).ready(function(event){
