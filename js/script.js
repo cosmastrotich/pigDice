@@ -34,7 +34,11 @@ Player.prototype.hold = function () {
   this.tempscore += this.roll;
   }
 }
-
+Player.prototype.winnerCheck = function () {
+  if (this.totalscore >= 100) {
+    alert(this.playerName + " You are the winner!");
+  }
+}
 
 //user interface
 $(document).ready(function(event){
@@ -63,10 +67,11 @@ $("button#New Game").click(function(event){
   player2.newgame();
   $("#Round-total-1").empty();
   $("#Total-scores-1").empty();
-$("#Dice-roll-1").empty();
+$("#Die-roll-1").empty();
 $("#Round-total-2").empty();
 $("#Total-score-2").empty();
-$("#Dice-roll-2").empty();
+$("#Die-roll-2").empty();
+
 (".start").show();
 
 });
