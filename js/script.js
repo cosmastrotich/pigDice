@@ -1,3 +1,19 @@
+// business logic
+var player1="";
+var player2="";
+
+var throwDice=function(){
+  return Math.floor(6*Math.random ())+1;
+}
+function Player(turn) {
+  this.roll = 0;
+  this.tempscore = 0;
+  this.totalscore = 0;
+  this.turn = turn;
+  this.playerName;
+}
+
+
 //user interface
 $(document).ready(function(event){
 
@@ -32,30 +48,4 @@ $("#Dice-roll-2").empty();
 (".start").show();
 
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-var player1=("");
-var player2=("");
-
-var throwDice=function(){
-  return Add.floor(6*Add.random ())+1;
-}
+$("button#player1-roll").click(function(event){
