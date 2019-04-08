@@ -26,6 +26,15 @@ Player.prototype.rollone = function() {
 Player.prototype.hold = function () {
   this.totalscore += this.tempscore;
   this.tempscore = 0;
+  // this.changeturn();
+  alert(this.playerName + ", your turn is over, pass the mouse!");
+}
+// this.changeturn();
+  } else {
+  this.tempscore += this.roll;
+  }
+}
+
 
 //user interface
 $(document).ready(function(event){
@@ -34,7 +43,7 @@ $(document).ready(function(event){
   player1= new Player(true);
   player2= new Player(false);
   $(".player-console").show();
-  $(".start").hide():
+ $(".start").hide():
 
   var player1Name= $(".player1Name").val();
   $("#player1Name").text(player1Name);
