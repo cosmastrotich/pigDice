@@ -6,13 +6,13 @@ This is web applicaton a game that two players plays in turn as one throw dice t
 ## BDD
 |BEVAHIOUR                                 | INPUT                             |OUTPUT                        |
 |------------------------------------------|-----------------------------|------------------------------------|
-|Players input the names then click start  |players names are input      |takes you to new game               | button                                                                                                    
-|player 1 click Roll butoon                | click Roll button           |dice Roll and number is generated   |
+|Players input the names then click start  |players names are input      |takes you to new game               | |button                                                                                                    
+|player 1 click Roll button                | click Roll button           |dice Roll and number is generated   |
 |If player1 Roll more than one  number Roll| Roll is equal to twice      | Round total is equal to 2          |
 | is added to the total score            
 |if a player roll 1 no score is added and  
-|round for player ends                     | roll is equal to one        |round total = total score and        player 2 begin
-|when a player total round to 100 or more  | player 1 or 2 totals to 100 | winner message is  alerted        |
+|round for player ends                     | roll is equal to one        |round total = total score and       | |player 2 begin
+|when a player total round to 100 or more  | player 1 or 2 totals to 100 | winner message is  alerted         |
 
 
 ## Set up Requirements
